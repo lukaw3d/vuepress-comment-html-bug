@@ -5,6 +5,8 @@ text
 <a>html</a>
 text
 ```
+and publish it to https://lukaw3d.github.io/vuepress-comment-html-bug/index
+
 JavaScript breaks in a browser:
 `DOMException: Failed to execute 'appendChild' on 'Node': This node type does not support this method.`
 
