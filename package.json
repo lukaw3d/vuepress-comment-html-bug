@@ -1,5 +1,9 @@
 {
   "license": "MIT",
+  "scripts": {
+    "build": "vuepress build ./docs",
+    "serve": "http-server -c-1 ./docs/.vuepress/dist"
+  },
   "dependencies": {
     "http-server": "^0.12.3",
     "vuepress": "^1.8.2"

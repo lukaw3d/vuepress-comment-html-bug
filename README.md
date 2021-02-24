@@ -10,7 +10,7 @@ JavaScript breaks in a browser:
 
 ### Reproduce repo
 ```sh
-npm i
+npm ci
 npx vuepress build ./docs
 npx http-server -c-1 ./docs/.vuepress/dist
 ```
@@ -27,3 +27,26 @@ If I remove any one of those lines, it seems to work. Open these variants:
 
 Everything seems to work in development version (`npx vuepress dev`)
 
+### Vuepress info
+```
+$ npx vuepress info
+
+Environment Info:
+
+  System:
+    OS: Linux 5.8 Ubuntu 20.04.2 LTS (Focal Fossa)
+    CPU: (8) x64 Intel(R) Core(TM) i7-1065G7 CPU @ 1.30GHz
+  Binaries:
+    Node: 14.15.5 - /usr/bin/node
+    Yarn: 1.22.5 - /usr/bin/yarn
+    npm: 6.14.11 - /usr/bin/npm
+  Browsers:
+    Chrome: 88.0.4324.182
+    Firefox: 85.0.1
+  npmPackages:
+    @vuepress/core:  1.8.2
+    @vuepress/theme-default:  1.8.2
+    vuepress: ^1.8.2 => 1.8.2
+  npmGlobalPackages:
+    vuepress: Not Found
+```
